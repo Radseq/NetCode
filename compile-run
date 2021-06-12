@@ -1,0 +1,7 @@
+#!/bin/bash
+
+clang++ -Wall -std=c++2a -fPIC -c *.cpp
+printf "Compiled: %s\n" *.cpp
+clang++ -shared -Wall -o libNetCode.so *.o
+printf "Created: %s\n" *.so
+echo "Done"
